@@ -20,7 +20,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,600;1,6..72,500&family=Noto+Serif+JP:wght@500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style.css">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tasukai","operatingSystem":"macOS 14+","applicationCategory":"DeveloperApplication","softwareVersion":"0.1.0","downloadUrl":"https://github.com/cyprienbrisset/tasukai-public/releases/latest/download/Tasukai.dmg","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+{"@context":"https://schema.org","@type":"SoftwareApplication","name":"Tasukai","operatingSystem":"macOS 14+","applicationCategory":"DeveloperApplication","softwareVersion":"0.2.0","downloadUrl":"https://github.com/cyprienbrisset/tasukai-public/releases/latest/download/Tasukai.dmg","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
 </script>
 </head>
 <body>
@@ -56,7 +56,7 @@
   <div class="wrap">
     <img class="banner only-light" src="assets/img/banner-light-transparent.png" alt="Tasukai — AI Development Workspace">
     <img class="banner only-dark" src="assets/img/banner-dark-transparent.png" alt="Tasukai — AI Development Workspace">
-    <div class="eyebrow"><span class="dot"></span>Version 0.1.0 · macOS 14+ · Intel et Apple Silicon</div>
+    <div class="eyebrow"><span class="dot"></span>Version 0.2.0 · macOS 14+ · Intel et Apple Silicon</div>
     <h1>Déléguez le développement à une équipe d'agents IA. <em>Gardez la main</em> sur chaque décision.</h1>
     <p class="lede">Tasukai (助け合い, « s'entraider ») est une application macOS native. Décrivez le besoin : l'Analyste rédige la spécification, le Développeur implémente sur une branche isolée, le Testeur vérifie, le Reviewer relit. Vous n'intervenez que lorsqu'une décision humaine est nécessaire.</p>
     <div class="cta">
@@ -228,6 +228,9 @@
       <h2>Tout ce qu'il faut autour du code.</h2>
     </div>
     <div class="features">
+      <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></div><h3>iPhone et Meta Portal</h3><p>Validez, répondez aux agents, choisissez une maquette et suivez l'équipe depuis l'iPhone ou un Portal posé sur le bureau. Appairage par code, échanges chiffrés.</p></article>
+      <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"/></svg></div><h3>Accès à distance</h3><p>Hors de chez vous, l'iPhone et le Portal joignent le Mac par un relais qui ne voit que des données chiffrées de bout en bout. Désactivable.</p></article>
+      <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M12 3v12m0 0-4-4m4 4 4-4M4 19h16"/></svg></div><h3>Mises à jour automatiques</h3><p>Nouvelle version détectée sur GitHub, empreinte SHA-256 vérifiée, installée et relancée en un clic.</p></article>
       <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 7h18M3 12h18M3 17h12"/></svg></div><h3>Tableau Kanban</h3><p>Les missions par étape, sous-missions regroupées. Glisser une carte valide une spécification ou accepte une livraison.</p></article>
       <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg></div><h3>Mémoire d'équipe</h3><p>Cherchez dans tout ce que l'équipe a produit, posez une question en langage naturel : la réponse cite ses sources.</p></article>
       <article class="feature reveal"><div class="ico"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="m7 9 3 3-3 3M13 15h4"/></svg></div><h3>Terminal intégré</h3><p>Reprenez une mission dans Claude Code interactif sur la même session ; les échanges et commits reviennent dans Tasukai.</p></article>
@@ -326,7 +329,7 @@ claude          # se connecter une première fois</code><button class="copy">Cop
     </div>
     <div class="faq">
       <details><summary>Faut-il un abonnement ou une clé API ?</summary><p>Tasukai est gratuit. Il pilote Claude Code avec le compte déjà configuré sur votre Mac (abonnement Claude ou clé API) : la consommation est celle de Claude Code, et Tasukai affiche le coût de chaque mission.</p></details>
-      <details><summary>Mon code est-il envoyé quelque part ?</summary><p>Tasukai n'a aucune télémétrie et stocke tout en local. Seuls les appels de Claude Code sortent de la machine, exactement comme lorsque vous l'utilisez dans le terminal.</p></details>
+      <details><summary>Mon code est-il envoyé quelque part ?</summary><p>Tasukai n'a aucune télémétrie et stocke tout en local. Seuls les appels de Claude Code sortent de la machine, exactement comme lorsque vous l'utilisez dans le terminal. L'accès à distance des applications iPhone et Portal passe par un relais qui ne transmet que des messages chiffrés de bout en bout, et la recherche de mises à jour interroge GitHub une fois par jour ; les deux se désactivent dans les Paramètres.</p></details>
       <details><summary>Les agents peuvent-ils casser ma copie de travail ?</summary><p>Non. Chaque mission travaille dans un worktree Git dédié, sur une branche isolée, limité aux dépôts concernés. Rien n'est poussé sans votre action, et le chantier est nettoyé après fusion.</p></details>
       <details><summary>Que se passe-t-il quand un agent ne sait pas ?</summary><p>Il s'arrête et pose une question bloquante, avec contexte, options et conséquences. Seule la mission concernée attend ; après votre réponse, l'agent reprend sa session là où il s'était arrêté.</p></details>
       <details><summary>Fonctionne-t-il avec plusieurs dépôts ?</summary><p>Oui. Un dossier parent contenant plusieurs dépôts est reconnu comme un projet ; seuls les dépôts concernés par une mission reçoivent un worktree, et la livraison ouvre une pull request par dépôt.</p></details>
@@ -342,7 +345,7 @@ claude          # se connecter une première fois</code><button class="copy">Cop
     <h2>Confiez la prochaine tâche à l'équipe.</h2>
     <p>Gratuit, natif, et vous gardez le dernier mot.</p>
     <div class="cta">
-      <a class="btn btn-primary" href="https://github.com/cyprienbrisset/tasukai-public/releases/latest/download/Tasukai.dmg">Télécharger Tasukai 0.1.0</a>
+      <a class="btn btn-primary" href="https://github.com/cyprienbrisset/tasukai-public/releases/latest/download/Tasukai.dmg">Télécharger Tasukai 0.2.0</a>
       <a class="btn btn-ghost" href="https://github.com/cyprienbrisset/tasukai-public/releases">Toutes les versions</a>
     </div>
   </div>

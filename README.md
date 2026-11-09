@@ -30,6 +30,12 @@ Ce dépôt contient les **versions publiées** et le **site** de Tasukai.
    xattr -dr com.apple.quarantine /Applications/Tasukai.app
    ```
 
+Tasukai se met ensuite à jour tout seul : chaque nouvelle version publiée ici est proposée dans l'application (**Paramètres › Général › Mises à jour**), vérifiée par son empreinte SHA-256, installée et relancée en un clic. Les versions antérieures à 0.2.0 doivent être mises à jour une fois à la main.
+
+### Application Meta Portal
+
+Téléchargez `Tasukai-Portal.apk` depuis la [dernière version](https://github.com/cyprienbrisset/tasukai-public/releases/latest), activez **Paramètres › Débogage › ADB** sur le Portal, branchez-le en USB-C puis `adb install -r Tasukai-Portal.apk`. Appairez-le ensuite depuis **Paramètres › iPhone** sur le Mac.
+
 **Prérequis** : macOS 14+ (Intel ou Apple Silicon), [Claude Code](https://docs.anthropic.com/claude-code) installé et authentifié, Git ; `gh` facultatif pour les pull requests et reviews GitHub.
 
 Toutes les fonctionnalités sont présentées sur le [site](https://cyprienbrisset.github.io/tasukai-public/).
